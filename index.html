@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PRTY Search</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- Loading Screen -->
+<div id="loader">
+  <div class="loader-box">
+    <div class="bar"></div>
+    <p id="loading-text">Starting the party...</p>
+  </div>
+</div>
+
+<!-- Tabs -->
+<div class="tabs" id="tabs">
+  <div class="tab active">New Tab</div>
+  <button onclick="newTab()">＋</button>
+</div>
+
+<!-- Browser -->
+<iframe id="browser"></iframe>
+
+<!-- Home -->
+<div id="home">
+
+  <h1 class="logo">PRTY</h1>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="Search the web"
+    onkeydown="handleSearch(event)"
+  >
+
+  <div class="shortcuts">
+    <a href="games.html">
+      <img src="assets/games.png">
+      <span>Games</span>
+    </a>
+
+    <a href="cinema.html">
+      <img src="assets/cinema.png">
+      <span>Cinema</span>
+    </a>
+
+    <a href="manga.html">
+      <img src="assets/manga.png">
+      <span>Manga</span>
+    </a>
+
+    <a href="settings.html">
+      <img src="assets/logo.png">
+      <span>Settings</span>
+    </a>
+  </div>
+
+</div>
+
+<script src="js/loading.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>
