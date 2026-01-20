@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  margin: 0;
+  background: #0b0b0f;
+  color: white;
+}
+
+.logo {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 120px;
+  background: linear-gradient(45deg,#ff4fd8,#8f6bff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#search {
+  display: block;
+  margin: 30px auto;
+  width: 550px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+}
+
+.shortcuts {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.shortcuts a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.shortcuts img {
+  width: 60px;
+  height: 60px;
+}
+
+.tabs {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  gap: 5px;
+  padding: 8px;
+  z-index: 10;
+}
+
+.tab {
+  background: #222;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: #ff4fd8;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 45px);
+  border: none;
+  display: none;
+  margin-top: 45px;
+}
+
+/* Loader */
+
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0b0b0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.loader-box {
+  width: 300px;
+}
+
+.bar {
+  height: 6px;
+  background: linear-gradient(90deg,#ff4fd8,#8f6bff);
+  animation: load 2s forwards;
+}
+
+@keyframes load {
+  from { width: 0%; }
+  to { width: 100%; }
+}
