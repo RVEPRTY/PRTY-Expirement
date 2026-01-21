@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PRTY</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading-screen">
+  <img src="assets/logo.png" class="loading-logo">
+  <p id="loading-text"></p>
+  <div class="loading-bar">
+    <div class="loading-progress"></div>
+  </div>
+</div>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="tabs" id="tabs"></div>
+  <button class="new-tab" onclick="newTab()">+</button>
+  <input
+    id="url-bar"
+    placeholder="Search or enter URL"
+    onkeydown="handleURL(event)"
+  >
+</div>
+
+<!-- BROWSER CONTENT -->
+<div id="browser-area"></div>
+
+<script src="js/loader.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/browser.js"></script>
+</body>
+</html>
